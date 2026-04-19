@@ -154,10 +154,10 @@ int main() {
             cout << "Enter Age: ";
             cin >> m.age;
 
-            cout << "Enter Weight: ";
+            cout << "Enter Weight(KG's): ";
             cin >> m.weight;
 
-            cout << "Enter Height: ";
+            cout << "Enter Height(cm): ";
             cin >> m.height;
 
             cout << "Medical condition (yes/no): ";
@@ -170,9 +170,11 @@ int main() {
 
             cout << "Phone: ";
             cin >> m.phone;
-
+            
+            
             cout << "Email: ";
             cin >> m.email;
+            
 
             cout << "Blood Group: ";
             cin >> m.blood_grp;
@@ -212,11 +214,13 @@ int main() {
                     cin >> ch;
 
                     if (ch == 1) {
+                        cout<<"Whats your new weight : ";
                         cin >> t.newweight;
                         t.updateweight();
                         members[i].weight = t.weight;
                     }
                     else if (ch == 2) {
+                        cout<<"Whats your new height : ";
                         cin >> t.newheight;
                         t.updateheight();
                         members[i].height = t.height;
